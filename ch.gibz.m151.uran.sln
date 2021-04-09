@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ch.gibz.m151.uran.api", "ch.gibz.m151.uran.api\ch.gibz.m151.uran.api.csproj", "{CF6F1071-4D61-487D-BEC9-C11BA6A93AA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ch.gibz.m151.uran.data", "ch.gibz.m151.uran.data\ch.gibz.m151.uran.data.csproj", "{D20C3969-DDC4-4C65-9A57-73622ACE3EC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF6F1071-4D61-487D-BEC9-C11BA6A93AA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF6F1071-4D61-487D-BEC9-C11BA6A93AA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF6F1071-4D61-487D-BEC9-C11BA6A93AA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF6F1071-4D61-487D-BEC9-C11BA6A93AA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D20C3969-DDC4-4C65-9A57-73622ACE3EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D20C3969-DDC4-4C65-9A57-73622ACE3EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D20C3969-DDC4-4C65-9A57-73622ACE3EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D20C3969-DDC4-4C65-9A57-73622ACE3EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDEBB61B-F963-4BCE-9AE4-1299CA37F189}
+	EndGlobalSection
+EndGlobal
