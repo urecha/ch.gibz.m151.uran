@@ -13,11 +13,11 @@ namespace ch.gibz.m151.uran.api.Controllers
     public class CommentController : ControllerBase
     {
         PhotoGalleryContext dbContext = new PhotoGalleryContext();
-        
-        [HttpGet("comments")]
-        public IActionResult GetComments(int exhibitId)
+
+        [HttpGet("exhibit/{id}")]
+        public IActionResult GetForExhibit(int id)
         {
-            List<Comment> comments = new List<Comment>(dbContext.Comments.Where(c => c.ExhibitId == exhibitId).ToArray());
+            List<Comment> comments = new List<Comment>(dbContext.Comments.Where(c => c.ExhibitId == id).ToArray());
             return Ok(comments);
         }
 
@@ -33,15 +33,15 @@ namespace ch.gibz.m151.uran.api.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] Comment comment)
+        public IActionResult Create([FromBody] Comment comment)
         {
             dbContext.Comments.Add(comment);
             dbContext.SaveChanges();
-            return Ok("Created comment");
+            return CreatedAtAction(nameof(Create), comment);
         }
 
-        [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] Comment comment)
+        [HttpPut]
+        public IActionResult Update([FromBody] Comment comment)
         {
             Comment commentToModify = dbContext.Comments.Find(id);
             commentToModify.Title = comment.Title;
@@ -49,7 +49,22 @@ namespace ch.gibz.m151.uran.api.Controllers
             //change date or bool would be nice
             dbContext.Entry(commentToModify).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             dbContext.SaveChanges();
-            return Ok("Updated comment");
+            return Ok(comment);
+        }
+
+        [HttpGet("like/{id}")]
+        public IActionResult LikeComment(int id)
+        {
+            CommentLike like = dbContext.CommentLikes.Single(l => l.CommentId == id);
+            //TODO needs user verification quoi
+            if (like != null)
+            {
+                dbContext.CommentLikes.Remove(like);
+                return Ok("Exhibit unliked");
+            }
+            dbContext.CommentLikes.Add(new CommentLike { CommentId = id, UserId = 1 });
+            dbContext.SaveChanges();
+            return Ok("Exhibit liked");
         }
 
         [HttpDelete("{id}")]
