@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ch.gibz.m151.uran.api", "ch.gibz.m151.uran.api\ch.gibz.m151.uran.api.csproj", "{CF6F1071-4D61-487D-BEC9-C11BA6A93AA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ch.gibz.m151.uran.api", "ch.gibz.m151.uran.api\ch.gibz.m151.uran.api.csproj", "{CF6F1071-4D61-487D-BEC9-C11BA6A93AA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ch.gibz.m151.uran.data", "ch.gibz.m151.uran.data\ch.gibz.m151.uran.data.csproj", "{D20C3969-DDC4-4C65-9A57-73622ACE3EC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ch.gibz.m151.uran.data", "ch.gibz.m151.uran.data\ch.gibz.m151.uran.data.csproj", "{D20C3969-DDC4-4C65-9A57-73622ACE3EC5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ch.gibz.m151.uran.net-client", "ch.gibz.m151.uran.net-client\ch.gibz.m151.uran.net-client.csproj", "{BAC3B883-29CA-434F-B041-685FFB199955}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ch.gibz.m151.uran.business", "ch.gibz.m151.uran.business\ch.gibz.m151.uran.business.csproj", "{FF96CC1B-412B-40BB-8DD9-36DD04287BB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{D20C3969-DDC4-4C65-9A57-73622ACE3EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D20C3969-DDC4-4C65-9A57-73622ACE3EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D20C3969-DDC4-4C65-9A57-73622ACE3EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAC3B883-29CA-434F-B041-685FFB199955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC3B883-29CA-434F-B041-685FFB199955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC3B883-29CA-434F-B041-685FFB199955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC3B883-29CA-434F-B041-685FFB199955}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF96CC1B-412B-40BB-8DD9-36DD04287BB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF96CC1B-412B-40BB-8DD9-36DD04287BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF96CC1B-412B-40BB-8DD9-36DD04287BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF96CC1B-412B-40BB-8DD9-36DD04287BB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

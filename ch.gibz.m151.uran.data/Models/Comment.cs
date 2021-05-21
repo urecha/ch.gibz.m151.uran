@@ -56,4 +56,9 @@ namespace ch.gibz.m151.uran.data.Models
         public int Likes { get; set; }
 
     }
+
+    public class SimpleComment
+    {
+        public string Content { get; set; }
+    }
 }

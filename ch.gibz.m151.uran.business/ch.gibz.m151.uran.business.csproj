@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ch.gibz.m151.uran.data\ch.gibz.m151.uran.data.csproj" />
+  </ItemGroup>
+
+</Project>

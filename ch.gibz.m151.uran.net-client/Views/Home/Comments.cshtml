@@ -1,0 +1,16 @@
+﻿@model List<ch.gibz.m151.uran.data.Models.SimpleComment>
+
+@{
+    ViewData["Title"] = "Commentaires";
+}
+
+<h1>Comments</h1>
+
+@foreach (var item in Model)
+{
+    <div class="card">
+        <div class="card-body">
+            @Html.DisplayFor(modelItem => item.Content)
+        </div>
+    </div>
+}
