@@ -12,6 +12,7 @@ namespace ch.gibz.m151.uran.api.Controllers
     [ApiController]
     public class CommentController : ControllerBase
     {
+        //eventually via business man in the middle
         PhotoGalleryContext dbContext = new PhotoGalleryContext();
 
         [HttpGet("exhibit/{id}")]
@@ -43,7 +44,7 @@ namespace ch.gibz.m151.uran.api.Controllers
         [HttpPut]
         public IActionResult Update([FromBody] Comment comment)
         {
-            Comment commentToModify = dbContext.Comments.Find(id);
+            Comment commentToModify = dbContext.Comments.Find(comment.Id);
             commentToModify.Title = comment.Title;
             commentToModify.Content = comment.Content;
             //change date or bool would be nice

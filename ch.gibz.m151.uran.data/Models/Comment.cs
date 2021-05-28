@@ -22,38 +22,4 @@ namespace ch.gibz.m151.uran.data.Models
         public virtual Exhibit Exhibit { get; set; }
         public virtual ICollection<CommentLike> CommentLikes { get; set; }
     }
-
-    /// <summary>
-    /// Model of a component as is used in the client application.
-    /// </summary>
-    public class CommentModel
-    {
-        /// <summary>
-        /// Comment entity id
-        /// </summary>
-        public int Id { get; set; }
-
-        /// <summary>
-        /// Usersummary of the exhibitor
-        /// </summary>
-        //public UserSummary User { get; set; }
-
-        /// <summary>
-        /// Referred exhibit
-        /// </summary>
-        public int ExhibitId { get; set; }
-        /// <summary>
-        /// Title of the comment
-        /// </summary>
-        public string Title { get; set; }
-        /// <summary>
-        /// Content of the comment
-        /// </summary>
-        public string Content { get; set; }
-        /// <summary>
-        /// Amount of likes for this comment
-        /// </summary>
-        public int Likes { get; set; }
-
-    }
 }
